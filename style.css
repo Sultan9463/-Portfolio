@@ -25,7 +25,7 @@ header {
     color: white;
     padding: 25px 230px;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 1;
 }
 
@@ -565,7 +565,6 @@ header .fa-solid {
 
     .hi {
         font-size: 1.6rem;
-        border: solid red;
         height: auto;
         line-height: 1.2;
     }
@@ -640,8 +639,8 @@ header .fa-solid {
     }
 
     #About,
-    #home,
-    header {
+    #home
+    {
         gap: 30px;
         padding-left: 20px;
         padding-right: 20px;
@@ -682,6 +681,9 @@ header .fa-solid {
         height: 1450px;
         padding: 0;
 
+    }
+    header{
+        width: 97%;
     }
 
     .About_Me {

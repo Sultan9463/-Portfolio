@@ -1,0 +1,833 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-width: 100vh;
+    font-family: "Nunito", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1A223E;
+    color: white;
+    padding: 25px 230px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.navigateur {
+    display: flex;
+    gap: 20px;
+}
+
+.navigateur a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.navigateur a:hover {
+    color: #F6A21B;
+}
+
+.logo {
+    font-size: 2.5rem;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1A223E;
+    width: 100%;
+    height: 100vh;
+    padding: 40px 230px;
+}
+
+.hi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 900px;
+    height: 800px;
+    color: #fff;
+    gap: 20px;
+}
+
+
+.hi h2 {
+    font-size: 3.2rem;
+}
+
+.hi h1 {
+    font-size: 5.6rem;
+    font-weight: bold;
+}
+
+.hi p {
+    font-size: 1.6rem;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+
+}
+
+.cercle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    border: solid 3px #F6A21B;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.cercle:hover {
+    box-shadow: 0 0 13px #F6A21B;
+    background-color: #fff;
+}
+
+i {
+    display: flex;
+    font-size: 2rem;
+    color: #F6A21B;
+}
+
+span {
+    color: #F6A21B;
+
+}
+
+button {
+    width: 140px;
+    height: 43px;
+    border-radius: 15px;
+    background-color: #F6A21B;
+    border: none;
+    transition: 0.5s ease;
+    color: #fff;
+    font-weight: 600;
+}
+
+button:hover {
+    box-shadow: 0 0 13px #F6A21B;
+}
+
+.imag_1 {
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    border: solid 30px #fff;
+    background-color: rgb(224, 227, 228);
+    animation: flotant 4s ease-in-out infinite alternate;
+}
+
+@keyframes flotant {
+    form {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(20px);
+    }
+}
+
+#About {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2B3049;
+    padding: 40px 230px;
+}
+
+.About_Me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 960px;
+    height: 500px;
+    color: #fff;
+    gap: 20px;
+}
+
+.apropos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 510px;
+    border-top-right-radius: 60%;
+    background-color: #fff;
+}
+
+.imag_2 {
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    background-color: rgb(224, 227, 228);
+}
+
+.About_Me h2 {
+    font-size: 2.6rem;
+}
+
+.About_Me h1 {
+    font-size: 5.6rem;
+    font-weight: bold;
+}
+
+.About_Me p {
+    font-size: 1.6rem;
+}
+
+#Services {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A223E;
+    color: #fff;
+}
+
+.Nos_services {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    align-items: center;
+}
+
+.Nos_activites {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.Nos_services h1 {
+    font-size: 5.6rem;
+}
+
+.activite {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    background-color: #2B3049;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.activite:hover {
+    transform: scale(1.02);
+    border: solid 2px #F6A21B;
+}
+
+.activite i {
+    font-size: 80px;
+}
+
+.activite p {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#Portfolio {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B3049;
+    color: #fff;
+}
+
+.folio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+}
+
+.folio h1 {
+    margin-bottom: 5%;
+    font-size: 5.6rem;
+}
+
+.images_ {
+    display: grid;
+    grid-template-columns: 550px 550px 550px;
+    gap: 20px;
+}
+
+.photos {
+    position: relative;
+    width: 550px;
+    height: 330px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.photos img {
+    width: 550px;
+    height: 330px;
+    border-radius: 20px;
+}
+
+.text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding-bottom: 20px;
+    background: linear-gradient(177deg, rgba(255, 255, 255, 0.31) 32%, rgba(246, 162, 26, 0.93) 100%);
+    gap: 5px;
+    line-height: 1.1;
+    opacity: 0;
+}
+
+.text:hover {
+    opacity: 1;
+}
+
+.text p {
+    width: 300px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.text i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #1A223E;
+}
+
+#Contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A223E;
+    color: #fff;
+}
+
+.contact_Me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+}
+
+.contact_Me h1 {
+    font-size: 5.6rem;
+}
+
+.Maps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 230px;
+    gap: 40px;
+    width: 100%;
+    height: 800px;
+}
+
+.localisation iframe {
+    width: 800px;
+    height: 540px;
+    border-radius: 20px;
+    border-radius: 20px;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 800px;
+    height: auto;
+}
+
+.formulaire button {
+    color: #1A223E;
+}
+
+input {
+    width: 400px;
+    height: 60px;
+    border-radius: 12px;
+    font-size: 20px;
+    border: none;
+    background-color: #2B3049;
+    color: white;
+    padding: 10px;
+}
+
+.inscrire {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nom {
+    gap: 20px;
+    display: flex;
+}
+
+.address {
+    gap: 20px;
+    display: flex;
+}
+
+.zone {
+    width: 800px;
+    height: 350px;
+    padding-top: 0;
+}
+
+::placeholder {
+    text-align: center;
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+textarea {
+    padding: 10px;
+    /* padding-top: 10px; */
+    font-size: 20px;
+    border-radius: 12px;
+    background-color: #2B3049;
+    color: white;
+}
+
+textarea::placeholder {
+    font-size: 18px;
+}
+
+footer {
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2B3049;
+    color: white;
+    padding: 15px 230px;
+    width: 100%;
+    height: 100px;
+}
+
+.btn-top {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-top:hover {
+    box-shadow: 0 0 13px #F6A21B;
+}
+
+.btn-top i {
+    color: #1A223E;
+    font-size: 40px;
+}
+
+iframe {
+    width: 800px;
+    height: 540px;
+    border-radius: 20px;
+    /* border: solid red; */
+}
+
+header .fa-solid {
+    display: none;
+}
+
+@media (max-width: 1440px) {
+
+    .Nos_activites {
+        width: 95%;
+    }
+
+    .images_ {
+        grid-template-columns: 550px 550px;
+    }
+
+    .About_Me {
+        width: 780px;
+
+    }
+
+    .hi {
+        width: 780px;
+        height: auto;
+    }
+
+    #Portfolio {
+        height: 1500px;
+        justify-content: start;
+        align-items: start;
+        padding-top: 80px;
+    }
+
+    .Maps {
+        display: flex;
+        padding: 20px;
+        width: 100%;
+        gap: 10px;
+        height: auto;
+    }
+
+    iframe {
+        width: 200px;
+        height: 300px;
+    }
+
+    .formulaire {
+        width: auto;
+    }
+
+    .zone {
+        width: 600px;
+        height: 300px;
+    }
+
+    input {
+        width: 270px;
+    }
+
+    #About,
+    #home {
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 100%;
+    }
+
+    header {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    footer {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .hi {
+        font-size: 1.6rem;
+        border: solid red;
+        height: auto;
+        line-height: 1.2;
+    }
+
+    .imag_1 {
+        width: 400px;
+        height: 400px;
+    }
+
+    .imag_2 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .apropos {
+        height: 400px
+    }
+
+    .About_Me {
+        font-size: 1.2rem;
+    }
+
+    #Portfolio {
+        height: 1400px;
+    }
+
+    .images_ {
+        grid-template-columns: auto auto;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .text {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .localisation iframe {
+        width: 500px;
+        height: 500px;
+    }
+
+    .photos {
+        position: relative;
+        width: 400px;
+    }
+
+    .Maps {
+        align-items: start;
+        width: 1000px;
+    }
+
+    input {
+        width: 75%;
+        padding-top: 0;
+    }
+
+    iframe {
+        width: 150px;
+        height: 100px;
+    }
+
+    .formulaire {
+        width: auto;
+    }
+
+    .zone {
+        width: 100%;
+        height: 300px;
+    }
+
+    #About,
+    #home,
+    header {
+        gap: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #Contact {
+        height: auto;
+        padding: 60px;
+    }
+
+    .About_Me {
+        height: 700px;
+    }
+
+    .activite {
+        width: 500px;
+    }
+
+    .contact_Me {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #home {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 1450px;
+        padding: 0;
+    }
+
+    #About {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 1450px;
+        padding: 0;
+
+    }
+
+    .About_Me {
+        align-items: center;
+    }
+
+    #Services {
+        height: 1700px;
+    }
+
+    #Contact {
+        height: auto;
+        align-items: center;
+        padding-top: 80px;
+    }
+
+    .contact_Me {
+        height: auto;
+    }
+
+    .Nos_services {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hi {
+        width: 90%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: auto;
+        font-size: 2rem;
+    }
+
+    .apropos {
+        width: 800px;
+        height: 680px;
+    }
+
+    .imag_2 {
+        width: 550px;
+        height: 550px;
+    }
+
+    .Nos_activites {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .activite {
+        width: 800px;
+        font-size: 30px;
+    }
+
+    .Maps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .localisation iframe {
+        width: 730px;
+        height: 300px;
+    }
+
+    .inscrire {
+        width: 740px;
+        padding: 20px;
+    }
+
+    .formulaire {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .About_Me {
+        width: 90%;
+    }
+
+    button {
+        width: 240px;
+        height: 63px;
+        font-size: 1.6rem;
+    }
+
+    .text {
+        width: 650px;
+    }
+
+    .photos {
+        position: relative;
+        width: 650px;
+        height: 330px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .images_ {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .photos img {
+        width: 650px;
+    }
+
+    #Portfolio {
+        height: 2450px;
+    }
+
+    .nom,
+    .address,
+    input {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .zone {
+        width: 720px;
+        height: 200px;
+    }
+
+    header .fa-solid {
+        display: block;
+        color: white
+    }
+
+    .navigateur {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+    }
+    header{
+        width: 984px;
+        border: solid red;
+    }
+
+
+
+}

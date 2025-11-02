@@ -99,7 +99,7 @@ header {
     border: solid 3px #F6A21B;
     border-radius: 50%;
     cursor: pointer;
-    transition: 0.5s ease;
+    /* transition: 0.5s ease; */
 }
 
 .cercle:hover {
@@ -295,7 +295,9 @@ button:hover {
     width: 550px;
     height: 330px;
     border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    transition: transform 0.4s ease;
 }
 
 .photos img {
@@ -306,22 +308,24 @@ button:hover {
 
 .text {
     position: absolute;
+    bottom: -100%;
+    /* caché en bas */
+    left: 0;
     width: 100%;
     height: 100%;
-    top: 0;
+    background: linear-gradient(177deg, rgba(255, 255, 255, 0.31) 32%, rgba(246, 162, 26, 0.93) 100%);
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: center;
-    padding-bottom: 20px;
-    background: linear-gradient(177deg, rgba(255, 255, 255, 0.31) 32%, rgba(246, 162, 26, 0.93) 100%);
-    gap: 5px;
-    line-height: 1.1;
-    opacity: 0;
+    border-radius: 12px;
+    transition: bottom 0.4s ease;
 }
 
-.text:hover {
-    opacity: 1;
+.photos:hover .text {
+    bottom: 0;
+    /* monte vers le haut */
 }
 
 .text p {
@@ -639,8 +643,7 @@ header .fa-solid {
     }
 
     #About,
-    #home
-    {
+    #home {
         gap: 30px;
         padding-left: 20px;
         padding-right: 20px;
@@ -682,7 +685,8 @@ header .fa-solid {
         padding: 0;
 
     }
-    header{
+
+    header {
         width: 97%;
     }
 
@@ -825,7 +829,4 @@ header .fa-solid {
     footer {
         flex-direction: column-reverse;
     }
-
-
-
 }
